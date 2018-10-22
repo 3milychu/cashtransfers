@@ -1,0 +1,259 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+  <title>The Phenomenal World | Visualization Test</title>
+  <meta name="description" content="The Whole Mind by Jain Family Institute.">
+  <link rel="stylesheet" href="jfi-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/zepto.waypoints.min.js"></script>
+  <script src="https://pw-dev.jainfamilyinstitute.org/assets/js/app.js"></script>
+
+<style>
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunti.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunti.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunti.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunti.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunti.svg#1f119954ff6b70c37e3ddb61d2164971') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  100;
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunrm.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunrm.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunrm.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunrm.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunrm.svg#b19a3fcc59b1d4740e6d6e9eb9cec199') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  100;
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunti.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunti.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunti.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunti.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunti.svg#1f119954ff6b70c37e3ddb61d2164971') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunrm.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunrm.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunrm.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunrm.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunrm.svg#b19a3fcc59b1d4740e6d6e9eb9cec199') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunbi.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunbi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunbi.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunbi.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunbi.svg#51e40c307490eb4f915148e752c550d1') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/cmunbx.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cmunbx.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cmunbx.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cmunbx.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cmunbx.svg#d7e0fafe6573441f0dfff33be5e578f6') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+body {
+  font-family:CMU Serif;
+}
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight:200;
+  letter-spacing:0.05em;
+}
+.type-l {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight:300;
+  letter-spacing:-0.02em;
+}
+#show-search {
+  font-family:'CMU Serif', serif;
+}
+</style>
+</head>
+<body>
+
+  <ul id="main-menu" class="pl3 pt2 list-reset sans">
+    <li class=""><a href="/">Latest</a></li>
+    <li class="ml1 "><a href="/tag:staff+picks">Staff Picks</a></li>
+    <li class="ml1 "><a href="/authors">Authors</a></li>
+    <li class="ml1 "><a href="/letters">Letters</a></li>
+    <li class="ml1 "><a href="/about">About</a></li>
+    <li class="ml1 relative">
+      <a id="show-search" href="#search">Search</a>
+              <form id="search-form" class="absolute" action="/search">
+          <input id="search-input" type="search" name="q" class="p1 ml1" value="">
+        </form>
+          </li>
+  </ul>
+
+  <div id="jfi-icon" class="xs-hide">
+    <a href="https://pw-dev.jainfamilyinstitute.org"><img src="" alt=""></a>
+  </div>
+
+  <main class="main m3" role="main">
+
+    <article class="article single wrap">
+      <header class="article-header">
+        <h1 class="type-l mb3 color-blue border-bottom-blue md-hide lg-hide xl-hide">The Phenomenal World</h1>
+        <h1 class="blog-title type-l m0 color-blue xs-hide sm-hide">The Phenomenal World</h1>
+        <h3 class="type-l m0 italic">October 10th, 2018</h3>
+        <h2 class="type-l mt0 col-7 mt1">Visualization Test</h2>
+        <p class="authors p0 m0">
+          &mdash;&nbsp;&nbsp;<span class="csv">
+			<a href="https://pw-dev.jainfamilyinstitute.org/authors/jfi">Jain Family Institute</a>
+	</span>
+        </p>
+      </header>
+
+      <header class="sticky-article-header xs-hide sm-hide col-3">
+        <h2 class="type-l mt0 p0 m0">Visualization Test</h2>
+        <p class="authors p0 m0">
+          &mdash;&nbsp;&nbsp;<span class="csv">
+			<a href="https://pw-dev.jainfamilyinstitute.org/authors/jfi">Jain Family Institute</a>
+	</span>
+        </p>
+      </header>
+
+      <div class="row clearfix mb3">
+        <div class="col xs-hide col-4">&nbsp;</div>
+        <div class="col col-12 md-col-6"></div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="col xs-hide col-4">&nbsp;</div>
+        <div class="text col col-12 md-col-6">
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h2>Tax Credits</h2>
+<div class="expand-visualization sans type-s"><span class="expand">Expand</span><span class="close">Close</span></div><iframe src="taxcredits.html"   scrolling="no" style="transform:scale(1);"></iframe>
+<h2>Cash Transfers</h2>
+<div class="expand-visualization sans type-s"><span class="expand">Expand</span><span class="close">Close</span></div><iframe src="ct.html"   scrolling="no" style="transform:scale(1);"></iframe>
+<h2>Universal Basic Income</h2>
+<div class="expand-visualization sans type-s"><span class="expand">Expand</span><span class="close">Close</span></div><iframe src="ubi.html"   scrolling="no" style="transform:scale(1);"></iframe>
+<h2>All</h2>
+<div class="expand-visualization sans type-s"><span class="expand">Expand</span><span class="close">Close</span></div><div class="iframe-wrap"><iframe src="index.html" width="640" height="360" scrolling="no"></iframe></div>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>          <div class="meta p1 m1 mt3">
+	<table class="meta-table">
+		<tr>
+			<td>Title</td>
+			<td>Visualization Test</td>
+		</tr>
+
+		<tr>
+			<td>Authors</td>
+			<td>
+				<span class="csv">
+			<a href="https://pw-dev.jainfamilyinstitute.org/authors/jfi">Jain Family Institute</a>
+	</span>
+      </td>
+		</tr>
+
+		<tr>
+			<td>Date</td>
+			<td>October 10th, 2018</td>
+		</tr>
+
+		<tr>
+			<td>Collection</td>
+			<td>Guaranteed Income</td>
+		</tr>
+
+		<tr>
+			<td>Filed Under</td>
+			<td>
+				<ul class="m0">
+									    <li class='m0'>
+				      <a href="https://pw-dev.jainfamilyinstitute.org/tag:Test">Test</a>
+				    </li>
+				   				</ul>
+			</td>
+		</tr>
+
+		
+	</table>
+</div>
+        </div>
+        <div class="col col-2">&nbsp;</div>
+      </div>
+
+      <div class="arrow-next">
+              </div>
+
+    </article>
+
+    <div class="row clearfix mt3">
+      <div class="col xs-hide col-4">&nbsp;</div>
+      <div class="col col-12 md-col-6">
+        <p>Sign up for the JFI Letter, a weekly digest of compelling research across the social sciences.</p>
+        <div id="mc_embed_signup">
+	<form action="https://jainfamilyinstitute.us16.list-manage.com/subscribe/post?u=30638b4a1754ffe5cdc9f22c1&amp;id=64c1b8a7e4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+			<div class="mc-field-group md-flex items-center">
+				<input type="email" value="" name="EMAIL" class="p1 required email" id="mce-EMAIL" placeholder="Email Address" autocomplete="off">
+				<input type="text" value="" placeholder="First Name" name="FNAME" class="p1" id="mce-FNAME">
+				<input type="text" value="" placeholder="Last Name" name="LNAME" class="p1" id="mce-LNAME">
+				<input type="text" value="" placeholder="How did you find us?" name="MMERGE3" class="p1" id="mce-MMERGE3">
+
+				<input type="submit" value="Ok" name="subscribe" id="mc-embedded-subscribe" class="pl2 button">
+			</div>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_30638b4a1754ffe5cdc9f22c1_64c1b8a7e4" tabindex="-1" value=""></div>
+    </div>
+	</form>
+</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer cf" role="contentinfo">
+    <div class="wrap wide">
+
+    	<div class="row">
+    		<div class="col col-4">&nbsp;</div>
+    		<div class="col col-6">
+    			<p class="footer-copyright pb2 center"></p>
+    		</div>
+    	</div>
+    </div>
+  </footer>
+
+</body>
+</html>
